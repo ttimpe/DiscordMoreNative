@@ -1,0 +1,50 @@
+//META{"name":"MoreNative","description":"Makes Discord behave more like a normal native application","author":"Tobias Timpe","version":"1.0"}*//{}
+
+div, button{
+    cursor:unset !important;
+}
+/* Allow horizontal resizing of the sidebar */
+div[class^='sidebar-'], div[class*=' sidebar-'] {
+    resize: horizontal;
+}
+/* Removes the max width on channels/DM conversations so that the text actually expands */
+a[class^='channel-'], a[class*=' channel-'] {
+    max-width: unset;
+    cursor: default !important;
+}
+
+/* Expands the banner */
+div[class^='bannerImage'], div[class*=' bannerImage-'] {
+    width: 100%;
+}
+
+/* Allows horizontal resizing of the memebers list, WIP */
+div[class^='members-'], div[class*=' members-'] {
+    resize:horizontal;
+}
+/* Removes the max width on members so that the text actually expands */
+
+div[class^='member-'], div[class*=' member-'] {
+    max-width:unset;
+}
+
+/* Removes the "Activity" column */
+div[class^='nowPlayingColumn-'], div[class*=' nowPlayingColumn-'] {
+    display: none;
+}
+
+div[class^='wrapper-'], div[class*=' wrapper-'], a[class^='wrapper-'], a[class*=' wrapper-'] {
+    cursor: default !important;
+}
+input[type=checkbox] {
+	cursor: unset !important;
+}
+
+div[class^='search-'], div[class*=' search-'], div[class^='searchBar-'], div[class*=' searchBar-'] *, div[class^='search-'] *, div[class*=' search-'] *, div[class^='searchBar-'] *, div[class*=' searchBar-'] * {
+	cursor: unset !important !important;
+}
+
+/* Removes the nitro link in the sidebar */
+div[class^='privateChannels'] a[href='/store'] {
+	display:none;
+}
